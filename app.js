@@ -3,10 +3,12 @@ var time = function(){
 };
 
 var timer = function(){
-        var event = time();
-        if(event == undefined)
-            console.error('Log not defined');
-    console.log('hola');
+    var event = time();
+    if(event == undefined)
+        console.error('Event not defined');
+    else{
+       console.log('Event defined'); 
+    }
     setInterval(timer, 100);
 };
 timer();
